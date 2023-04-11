@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>   
+
+    <style>
+      #features > div.row.mx-auto.container > nav > ul > li.page-item.active > a{
+        background-color: black;
+      }
+      #features > div.row.mx-auto.container > nav > ul > li:nth-child(n):hover>a{
+        background-color: coral;
+        color: #fff;
+      }
+      .page-link{
+        color: #000;
+        border:transparent;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light pt-3 fixed-top">
+        <div class="container">
+            <img class="twooo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABCZJREFUaEPtmU1oHGUYx3/PJOlHWkGtFhTr7orUD6I9JNlJqZX0IBIPQi2xfhw8+YEHpSqoFEEv6qWlHrRYL+IhlSqioCCCqBhsdtNKra0gkexOWlOVWj1om8S4f5kNWXY3m52ZzCZmoXPbmed5/v/f+z7zzsy7RpMf1uT+uQjwf89gQ2agN6dVfztcDaxudThzeIOdWyqwWAA9efUV4Algm8HKkmnxgxkDq9p57cv19tdiwiwIoPc3rZ04zzuC7fXMFcS4AzsyKRtaLIjIAH0jWnmuhc9x2BLGlGDCxLbFgogMkM5rj8FTYczPxkj83L6GGxejnSIBdP+kDdbKSEW/z7icQgwCvwO3YVxVDSjYnU3ay1HAw8RGAkjntMuMveWFi30u+jLX2XH/fOe42tumeEvwQIUBcTKTso4wpqLERALoHtX7jsOOcgEZ92YT9l75OR/CmWTEseLSWjrajMsHE/ZHFINBsZEA3FENVt+8k+KyYyn7s1rIzekQRn/FbBkdwwk7GWQqyvWoAEdw6CwXyCStZg03pzcxHqkwY3RlEnY0isGg2LoA/VLLWJ43SkWMe4Arqnr7QC0RGVsNbqq69gHirH/OgYHDKfsqyGDQ9boA6dNaZ9MzgotwPJNJ2p64desCbD6l6wv/MhJXpFa+iZeGUvZi3Nr1Z2BMXVZgOK5IzRaDvdmkPR23dl0A19MdiM/iitTMFwcyKXs0bu36M+Cp38ShuCLz5B/MJK3yYbcAoboAPZ4elqi5ylRpnaWAF0m/ha8zCdsVKadGcBDAsxKvBoo0qB0CdaICuJ5eQTwXWHi5AvR42i/xWNMCuJ7eReyMAuB66kQcqcgpm6G416u9BC2jnyLubGaADCLdvAB5/QhsjAtgMDCUtAf9Ou5pXcM0p8prlr9W9OTUK+OL+VowUgul8/rVYH0DAE4MJe2W2TrdeR104D7/t/9FVzC6jibtTBHQ05OIfQ0BcPOaBFbEBSjmi82lnQnJXI8+jHWOwyeljTDJcT2+BTbFBrj1F61ZPUG4TamgVabon+Pt7WyptzPh5vQ8xtwP/zrPmXlXoVq9Ou9MhAAo5hrZAtw/nLDR8lo3n9CKS9byAmI3VmPDeSEAXWPqaCnwfWD7zLRH6c2y5jpfWWRK4kNz+Aa4gNho0C+4NswAhb6Ju0d1u+MQ7pMvGkCoMYl9D/SM6W4V+CiU2nIESOf0kBlvNy2Am9fjwOvNCxDlc3I5tlBxT8jD39fvCpyF5Qjgm946oiv/aWOf4C7g0jDLXIhlNHA85gQs5DkQXWUmo+kB0qPaZA7HFjoAtfIE+7NJ8xeVOUekzd0wpvx/LC8Y34V6DQ9RUDCNsT2bsI+XBMAX8SHOixushdYQHuuGTIvx2VftJQOIazpKfsNbKIp4I2IvAjRiFOPU+A/Xwx1PRj2JaAAAAABJRU5ErkJggg==" width="100px" height="80" alt=""><h3>Designo</h3>
+          <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation ">
+            <!-- <span><i id="bar" class="fa-solid fa-bars"></i></span> -->
+
+            <span><img  id="bar" class="img-3" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANpJREFUSEvd1TFqQkEUQNEjqBCw0SJCinRpJOBCUmqTOp2BrCBFimwgZA82pnUfgjuwCChoo0VAC3mQQezfL3QWcA/z/sz8mopX7b/fQCvZ2mEfwAu+cZMM/OE1gDU6yfGSWwcwx2NFwDyAHj7QTkY20S0fObl9yl0HUMcTuslzWmIaIxrjOTlecuMAthXc4gJsA5hgWNEOJgE0McB9MrLAz3Uc0+TJnOdiRA94x12y9IvPAGboJ8dLbhZAvHrZL2kBNgGM8IV4MjLXAW/lmMb/+DazjhV2l38PjodQHfbWIhHEAAAAAElFTkSuQmCC"alt=""></span>
+          </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                 <li class="nav-item">
+                 <a class="nav-link" href="index.html">Home</a>
+                 </li>
+                 <li class="nav-item">
+                 <a class="nav-link active" href="#">Shop</a>
+                 </li>
+                 <li class="nav-item">
+                 <a class="nav-link" href="#">Blog</a>
+                 </li>
+                 <li class="nav-item">
+                 <a class="nav-link" href="#">About</a>
+                 </li>
+                 <li class="nav-item">
+                 <a class="nav-link" href="#">Contact Us</a>
+                 </li>
+                 <li class="nav-item">
+                 <img class="img-two" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAoRJREFUWEfV10nIjVEcx/HPa6YkRCSJ2BhCISmZksSCFJIpibIQCyzIkKIo046NiCRTLBRFSsqwkFA2WBkiJGVK6K9zS7fn3ud53pv3zdncxXPO+X/P7z/eJq28mlrZvv8GoB/mYTYGoy++4BXu4iIu43tZRfMU6IEtWIOOOZc/S3tPlYGoBzAMlzAIP3EeZ9OL4+Wd0R8zsBTDk+HjWIVvRUBqAYTxW+iWDK7EwzoXtsEyHERXXEnu+pEHkQUQst9LLz+Hxfiad1H6PiIZjxg5gPV557IA9qWDEVyTShiv2BqPG2iPMbhfD6IaIKL9KdphdI7s9e7dgw0pM2aVAVib/HgG8/Pkq/M93PgSbdEH72rtrVbgKqZjIU43ABBHoy7MxBKcKAoQuTwwBeDzBgG2YTt2pN/M66oV+Jzyu0uqdI0wRC04jCNYXVSB9+iO8OGHRqxjHfbnpWO1Ao8xFKPwoEGASjpvQmRFIRccxXJsxN4GASqPmZLqQiGAObiARxiZekBzOMamEh7pF2lYsyRXu6ADnqRMWIFQpOyKO69jMnZhc5lCFHsX4SQ+YUJSowxEpF6k4FsMwceyALH/WGqxrzEXtwsQxMu3JuOxfQGiotZdtdpxDB8x5USvj75+CLvrpGb4PCI9ZP/Fn1Ev4mga3jRHgTgTDSkyIfpD9PsACd/eQSjTCQNS6a4MIyF7TE+hRLTmiKepaXQrlAVZm6Im7Ex1PZpL1opoj6oXKoTPe+FaEYi8mfBvYz0TRAylkVqhyIs0vNzMSLVCEGUA8uIp63suxL8GCKi6EC0BEBC9U0xEsMa8Oa4iV0sBVCBiSIk/NBNbA6DZadic4Ct8piVdkAn1G6WYgCFkLtLRAAAAAElFTkSuQmCC" alt="">
+                 <img  class="img-two" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAmpJREFUWEft1kuoTWEUB/DflTAQivJWHkWeAyYGiJQijBiQEJESmXgkKcpjIqWk5JEYeAwUxUSUkiIDEsorhKQMRJFX6/Yd3bvv2edxz77dlD05nf1931r//V//9f9Wk05+mjo5v38WwEJswpTE4B0cwKV6GW0PA/uwJSfRHmyvB0S9AOLLL+I7duB0SrYMu9AN83G5VhD1AriBGdiK/ZkkwUqwcx2zOgrAZ/TEILzLJBmQ3sWeXh0F4HcKnMdctfU2uCqVYC82o0utX5Oz7zam4Ue59TwA8f4D+jWYvHR8JkI/NTMwAffxEsNbnKpGcXb9IDYifsM3agawHodwEisbABDdcK3Mh/wNmVeCc1iUkgeI0lMvA13xHn0xKbHaioVyAOJdtFh/jMCLBgDE0TCrpdiZzKoqgDF4hNcYlilavQzE8cU4i3uYnBVBOQbW4ghOYXnmwE0EiOk53VFuPYzrI7onQYewK2rgDJZgFY4X1IZXMQcbkrgrAniFoRiFZwUBWIfDqSNmV2JgJJ7iTQJRUP7muyNihhuGuD+VAmc1ED0ftIdy44ot8rmbRBhxS9d4m5HsBFZgDY4WmT3NDzEznE+d0Rw+y8BDjEW04pOCAcT4FqPbWwzOK0HUpg964FvBAMINox1/IRyy2VOyDDzGaEzEg4IBTMWt5LIhyrIliMk2bq0LqU4l52sUS8wUMTHPxTGszgMwMNlw7ySW3el/2WGiBlRB9bh0ByzAV4xveb+Us+Kw2UBb81xXA5DY8iXdsFeqWXGsh0q3YR6GJNHUmKfVtp9J9WHFMTE/zwapdyxvD4iKZ/4D+ANjFnUhodudrgAAAABJRU5ErkJggg==" alt="">
+                 </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="features" class="my-5 py-5">
+        <div class="container mt-5 py-5 ">
+          <h3 class="font-weight-bold">Our Products</h3>
+          <hr>
+          <p>Here you can check out our new products with fair price on designo.</p>
+        </div>
+        <div class="row mx-auto container">
+          <div onclick="window.location.href='sproduct.html';" class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid " src="img/ten.webp" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">T-Shirt</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="img/four.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Sneakers</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="img/shop-1.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Hand Bag</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="img/six.webp" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Sneakers</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="img/shop-2.jpeg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Skull Cap</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="img/shop-3.jpeg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Women Jacket</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="img/shop-4.webp" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Sneakers</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="img/shop-5.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Man Jacket</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="img/shop-6.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Travelling Bag</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="img/shop-7.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Watch</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="img/shop-8.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Women Hat</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="img/shop-12.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">sneakers</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="img/shop-14.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Watch</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="img/shop-15.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Leather Boots</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="img/shop-17.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Round Cap</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="img/shop-20.webp" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">T-Shirt</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="img/shop-21.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Jacket</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="img/shop-23.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Dress</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="img/shop-22.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Coat</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid" src="img/shop-24.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Dress</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <nav aria-label="...">
+            <ul class="pagination pagination-lg mt-5">
+              <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item " aria-current="page">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+    </section>
+  
+
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+          <div class="footer-one col-lg-3 col-md-6 col-12 pl-4">
+            <img class="fff" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABCZJREFUaEPtmU1oHGUYx3/PJOlHWkGtFhTr7orUD6I9JNlJqZX0IBIPQi2xfhw8+YEHpSqoFEEv6qWlHrRYL+IhlSqioCCCqBhsdtNKra0gkexOWlOVWj1om8S4f5kNWXY3m52ZzCZmoXPbmed5/v/f+z7zzsy7RpMf1uT+uQjwf89gQ2agN6dVfztcDaxudThzeIOdWyqwWAA9efUV4Algm8HKkmnxgxkDq9p57cv19tdiwiwIoPc3rZ04zzuC7fXMFcS4AzsyKRtaLIjIAH0jWnmuhc9x2BLGlGDCxLbFgogMkM5rj8FTYczPxkj83L6GGxejnSIBdP+kDdbKSEW/z7icQgwCvwO3YVxVDSjYnU3ay1HAw8RGAkjntMuMveWFi30u+jLX2XH/fOe42tumeEvwQIUBcTKTso4wpqLERALoHtX7jsOOcgEZ92YT9l75OR/CmWTEseLSWjrajMsHE/ZHFINBsZEA3FENVt+8k+KyYyn7s1rIzekQRn/FbBkdwwk7GWQqyvWoAEdw6CwXyCStZg03pzcxHqkwY3RlEnY0isGg2LoA/VLLWJ43SkWMe4Arqnr7QC0RGVsNbqq69gHirH/OgYHDKfsqyGDQ9boA6dNaZ9MzgotwPJNJ2p64desCbD6l6wv/MhJXpFa+iZeGUvZi3Nr1Z2BMXVZgOK5IzRaDvdmkPR23dl0A19MdiM/iitTMFwcyKXs0bu36M+Cp38ShuCLz5B/MJK3yYbcAoboAPZ4elqi5ylRpnaWAF0m/ha8zCdsVKadGcBDAsxKvBoo0qB0CdaICuJ5eQTwXWHi5AvR42i/xWNMCuJ7eReyMAuB66kQcqcgpm6G416u9BC2jnyLubGaADCLdvAB5/QhsjAtgMDCUtAf9Ou5pXcM0p8prlr9W9OTUK+OL+VowUgul8/rVYH0DAE4MJe2W2TrdeR104D7/t/9FVzC6jibtTBHQ05OIfQ0BcPOaBFbEBSjmi82lnQnJXI8+jHWOwyeljTDJcT2+BTbFBrj1F61ZPUG4TamgVabon+Pt7WyptzPh5vQ8xtwP/zrPmXlXoVq9Ou9MhAAo5hrZAtw/nLDR8lo3n9CKS9byAmI3VmPDeSEAXWPqaCnwfWD7zLRH6c2y5jpfWWRK4kNz+Aa4gNho0C+4NswAhb6Ju0d1u+MQ7pMvGkCoMYl9D/SM6W4V+CiU2nIESOf0kBlvNy2Am9fjwOvNCxDlc3I5tlBxT8jD39fvCpyF5Qjgm946oiv/aWOf4C7g0jDLXIhlNHA85gQs5DkQXWUmo+kB0qPaZA7HFjoAtfIE+7NJ8xeVOUekzd0wpvx/LC8Y34V6DQ9RUDCNsT2bsI+XBMAX8SHOixushdYQHuuGTIvx2VftJQOIazpKfsNbKIp4I2IvAjRiFOPU+A/Xwx1PRj2JaAAAAABJRU5ErkJggg==" alt="">
+            <h5 class="footer-logo">Designo</h5>
+              <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolor sunt omnis quasi obcaecati cum, aperiam cumque facere! Magnam, cumque! Ipsa at laudantium laborum doloremque illum ab quae delectus possimus.</p>
+          </div>
+          <div class="footer-one col-lg-3 col-md-6 col-12 ml-auto mb-3 pl-4">
+            <h5 class="pb-2">Featured</h5>
+            <ul class="text-uppercase list-unstyled">
+              <li><a href="#">men</a></li>
+              <li><a href="#">women</a></li>
+              <li><a href="#">boys</a></li>
+              <li><a href="#">girls</a></li>
+              <li><a href="#">new arrivals</a></li>
+              <li><a href="#">shoes</a></li>
+              <li><a href="#">cloths</a></li>
+            </ul>
+          </div>
+          <div class="footer-one col-lg-5 col-md-6 col-12 mb-3 pl-4">
+            <h5 class="pb-2">Contact Us</h5>
+            <div>
+              <h6 class="text-uppercase">Address</h6>
+              <p>123 STREET NAME, CITY, US</p>
+            </div>
+            <div>
+              <h6 class="text-uppercase">Phone</h6>
+              <p>(123) 456-7890</p>
+            </div>
+            <div>
+              <h6 class="text-uppercase">Email</h6>
+              <p>MAIL@EXAMPLE.COM</p>
+            </div>
+          </div>
+       </div>
+       <div class="copyright mt-5">
+         <div class="row container mx-autp">
+           <div class="col-lg-4 col-md-6 col-12 ml-auto mb-6 pl-4">
+            <p>Designo eCommerce &#169 2023. All Rights Reserved</p>
+           </div>
+           <div class="col-lg-4 col-md-6 col-12 pl-4">
+             <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKRJREFUSEvt1LENwjAQheEvBT09U1BQMAQVVNQswAQEJqBnBCQaZqBDTMMAKBJILgi2QiyCFNf2/e+9O18h8yky19cpwBA7zDDC4Ol+i7IuiVQH1b0Lpm8KtQIY41ajshXAAscAcMYS99iQpEa0wiEo9lF1CP05oJqOTSSGNfZNpygFMMcpJ2CCa1PA693/Nrl3kLyu+ybHdqLsEUUVfPuTuwt4AEyyJRmJeuRZAAAAAElFTkSuQmCC" alt=""></a>
+             <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAaRJREFUSEvl1T1IVmEUwPGfRlEOUpAaLUKDFZUYDtXYYIUUSEODBA5BEAVFk0JLQ2NDSgm52WCQk1DppItLi5tGYwhBJRSklNIHRx7lcnvf+/YqDuGBC5f7nHP+5+M559bYYqnZYv+2L2AnruAMfmISY/iVSr4fn+M9W6JWtGC0Ql+aMI62nN4UnqMLwxjJA+6jD90VIBM4VxDEU7xCAL9mMxjArZTmIHrxLefoMN4WOP+dzu6gP5/BDTzJGL/HIzzDp/T9Uqp1URXDeditSjaDvZjDgZz1MqbTWUR4s0KPTuFNKUA05xjuYfcmBrAZkf1fGdzFw004DtNF7MNKKUAD3iFKtVF5iYtZ4/yq6EhXtH6DhOsYKgLEhPYgynW0SsgHHML3IkCcvcaFKp2HeszQ47xdqW0aeyRWQXsVkNDvxNqgrZuWW9c7cBnXcL4CaBZn8bGUXjnAQcRE3sauAkAMVES+UE5nDRBXM6I9geM4idoCx0t4kObmR1GG2QzqcDU9pxE3Ki8zeJH20/y/9KhcifbgCBoT6Evaoqs/kWrk//8n/wFZekUZuN7ouQAAAABJRU5ErkJggg==" alt=""></a>
+             <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATlJREFUSEvt1TtLHVEUxfGf0UIkH0BEsBM1BJ+FjaBNKkHxE5hAUAjkA9hb2IuCKFoLKtY2dir4SEDFR2mhjSiiiJUyci9shpvmzkxlTnfOnL3/M2utc6ZGwaOm4P7SgK/oxjEO84BHwDiW8Amv+I3ZrJAI2EF/aHiKL3kC1jAWGm7hW56AFiyiF38wgcs8AVl7VayPHrShOey6xglqMZSq3sULRtGJehxhHc9xbwTMYzI8XMF3NOApBRjGTIUQXGGkBHsvqRZwg8Z/aJpAOvCYBZDUPuAc7ficgv3CXBbAfinCd2jCXsq/jXLkq5UoMXczvPU0psL8AH1ZvqAnGomfWAiAs5J0VZvchb+hYXKPLf8HxCR+UIkGytEqaXGBbdThR+qkJv+O27DWisEwv8dq+hwUfl0XAngDkcNiGQ2TPwEAAAAASUVORK5CYII=" alt=""></a>
+           </div>
+          </div>
+       </div>
+    </footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+</body>
+</html>
