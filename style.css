@@ -335,3 +335,17 @@ footer .copyright a:hover{
     transition: 0.3s ease;
     cursor: pointer;
 }
+.banner{
+    border-radius: 25px !important;
+    height: 300px !important;
+}
+.bimgs{
+    width: 370px !important;
+    height: 280px !important;
+    border-radius: 15px;
+}
+.postt:hover{
+    margin-top: 15px;
+    transition: 0.2sec;
+
+}
