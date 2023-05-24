@@ -1,2 +1,2 @@
 # E-commerce-Website
-This is a Ecommerce website and full responsive .
+This is a Ecommerce website and  responsive .
